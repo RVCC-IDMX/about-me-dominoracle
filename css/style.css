@@ -7,8 +7,11 @@ header {
     text-align: center;
 }
 h1,h2,h3,h4,h5,h6{
-    font-family:"Open Sans", Impact, serif
+    font-family:"Open Sans", Impact, serif;
     font-size:125%
+}
+img{
+    max-width: 100%;
 }
 #hero, footer{
     text-align: center;
@@ -38,4 +41,40 @@ h1,h2,h3,h4,h5,h6{
     color:blue 
     
 
+}
+
+/* Gallery */
+
+#gallery, #lit {
+    border:15px solid #024af5;
+    border-radius: 25px; 
+    margin-bottom: 4em;
+    text-align:center;
+}
+
+#lit {
+    text-align: justify;
+}
+#lit div{
+    padding:2em;
+    max-width:40rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Dropcaps */ 
+
+#lit p:first-letter {
+    color: yellow;
+    background-color: #024af5;
+    text-shadow: 0px 0px 10px red;
+    float: left;
+    font-size: 2.5em;
+    border:10px double maroon;
+    margin-right: .10ex;
+    line-height:100%;
+}
+
+#lit p {
+    clear:both
 }
