@@ -24,3 +24,10 @@ h1,h2,h3,h4,h5,h6{
 #bio{
     text-align: center;
 }
+#info, #biograph {
+    background-color: pink;
+    border:10px outset #024af5;
+    border-block-color:salmon;
+    border-radius: 25px 
+    
+}
