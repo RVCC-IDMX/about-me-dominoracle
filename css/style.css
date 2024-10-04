@@ -46,10 +46,15 @@ img{
 /* Gallery */
 
 #gallery, #lit {
+    background-color: burlywood;
     border:15px solid #024af5;
     border-radius: 25px; 
     margin-bottom: 4em;
     text-align:center;
+}
+
+#gallery img {
+    max-width:100%
 }
 
 #lit {
