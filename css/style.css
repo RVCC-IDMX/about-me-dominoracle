@@ -45,7 +45,7 @@ img{
 
 /* Gallery */
 
-#gallery, #lit {
+#gallery, #lit, #video {
     background-color: burlywood;
     border:15px solid #024af5;
     border-radius: 25px; 
@@ -82,4 +82,79 @@ img{
 
 #lit p {
     clear:both
+}
+
+/* tablet size */
+@media screen and (min-width: 60em){
+    figure{
+        display:grid;
+        grid-template-columns: 2fr 2fr;  
+    }
+    
+    figcaption{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 2rem; 
+        margin-left: 1rem;
+    }
+
+    figure img {
+        width: 100%;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 20rem;
+    }
+} 
+
+/* large screen size */
+
+@media screen and (min-width: 100em) {
+    
+    #gallery {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    hr{
+        display:none;
+    }
+
+    #gallery h2 {
+        grid-column: 1/-1;
+    }
+
+    figure{
+        display:block;  
+    }
+}
+
+/* Video */
+
+#videoContainerContainer {
+    max-width: 100%;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5rem;
+}
+
+#videoContainer{
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;/* 16:9 = 56.25%;
+                           4:3  = 75 */ 
+}
+
+#myVideo{
+    position:absolute;
+    top:0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width:100%;
+    height:100%;
 }
