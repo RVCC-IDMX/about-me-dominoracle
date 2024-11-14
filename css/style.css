@@ -164,3 +164,46 @@ img{
 #formElements {
     display:grid
 }
+
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+fieldset {
+    border: 2px solid lightblue;
+    margin-top:1em;
+    margin-bottom:1em;
+    border-radius: 1rem;
+}
+
+legend {
+    background-color:darkolivegreen;
+    color:white;
+    padding:.5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: .5em;
+    font-size: 1rem;
+}
+
+#contact ul {
+    list-style: none;
+    border:1px solid
+    padding:0px;
+}
+
+#contact li {
+    margin:1rem;
+}
+
+#contact button {
+    background-color:yellowgreen;
+    color:white;
+    border:5px solid darkolivegreen;
+    max-width:400px;
+    width:50%;
+    justify-self: center;
+}
