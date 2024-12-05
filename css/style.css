@@ -1,5 +1,5 @@
 body {
-    background-color: salmon;
+    background-color: white;
     font-family: Poppins, "Open Sans", serif;
     font-size: 150%;
 }
@@ -15,10 +15,10 @@ img{
 }
 #hero, footer{
     text-align: center;
-    background-color: yellowgreen;
+    background-color: #facfaa;
     color: white;
     padding: 20px;
-    border:10px solid darkolivegreen;
+    border:10px solid #FAA482;
     border-radius: 50px;
 }
 #hero img {
@@ -28,9 +28,9 @@ img{
     text-align: center;
 }
 #info, #biograph {
-    background-color: pink;
-    border:10px outset #024af5;
-    border-block-color:salmon;
+    background-color: #fab3aa;
+    border:10px outset #FAAABC;
+    border-block-color: WHITE;
     border-radius: 25px; 
     
 }
