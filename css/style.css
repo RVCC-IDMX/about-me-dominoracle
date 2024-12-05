@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: whitesmoke;
     font-family: Poppins, "Open Sans", serif;
     font-size: 150%;
 }
@@ -18,39 +18,41 @@ img{
     background-color: #facfaa;
     color: white;
     padding: 20px;
-    border:10px solid #FAA482;
+    border:10px solid orange;
     border-radius: 50px;
 }
 #hero img {
-    width: 250px;
+    width: 425px;
+    border: 10px solid #FAA482;
+    border-radius: 25%;
 }
 #bio{
     text-align: center;
 }
 #info, #biograph {
-    background-color: #fab3aa;
-    border:10px outset #FAAABC;
+    background-color: #facfaa;
+    border:10px outset orange;
     border-block-color: WHITE;
     border-radius: 25px; 
+    padding: 1%;
     
 }
 
 /* Hobbies */
 
 #hobbies ul li:nth-child(odd) { 
-    color:blue;
-    
-
+    color: orangered;
 }
 
 /* Gallery */
 
 #gallery, #lit, #video {
-    background-color: burlywood;
-    border:15px solid #024af5;
+    background-color: #fab3aa;
+    border:10px solid orangered;
     border-radius: 25px; 
     margin-bottom: 4em;
     text-align:center;
+    padding: 1%;
 }
 
 #gallery img {
@@ -179,7 +181,7 @@ fieldset {
 }
 
 legend {
-    background-color:darkolivegreen;
+    background-color: #FAA482;
     color:white;
     padding:.5em;
 }
@@ -201,11 +203,105 @@ legend {
 }
 
 #contact button {
-    background-color:yellowgreen;
+    background-color:#FAB3AA;
     color:white;
     font-size: 100%;
-    border:5px solid darkolivegreen;
+    border:5px solid #FAA482;
     max-width:400px;
     width:50%;
     justify-self: center;
+}
+/* Blog */
+
+#blog {
+    background-color: #FACFAA;
+    border: 10px solid orange;
+    padding: 2%;
+    border-radius: 25px;
+    
+}
+
+.container{
+    position: relative;
+    width: 450x;
+    height: 450px;
+    display: inline-block;
+}
+
+.image{
+    display: block;
+    width: 450px;
+    height: 450px;
+}
+
+.overlay{
+    position: absolute;
+    transition: all 2.5s ease;
+    opacity: 0;
+    background-color: #FAA482;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.text{
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+
+.overlayLeft {
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+.container:hover .overlayLeft{
+    width: 100%;
+}
+
+.overlayTop{
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #024af5;
+}
+
+.overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: orangered;
+}
+
+.container:hover .overlayTop, .container:hover .overlayBottom {
+    height: 100%;
+}
+
+.overlayCross{
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: purple;
+}
+.container:hover .overlayCross{
+    width: 100%;
+    height: 100%;
+}
+
+.overlayFade {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: darkgreen;
 }

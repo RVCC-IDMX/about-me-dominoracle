@@ -11,5 +11,14 @@ My name is Aaron Dominic. I am a first-year student at Raritan Valley Community 
 
 # COLOR SCHEME
 I chose the color scheme that appears warm and inviting. A color palette that reflects a little bit of my personality. 
+I mainly used the hexidecimal colors #FAA482, #FAB3AA, and #FACFAA.
+
+# RESOURCES FOR THE BLOG 
+In here are three links for the resources I used to research for my blog article.
+
+- https://www.lambdatest.com/blog/css-hover-effects/
+- https://www.youtube.com/watch?v=Cfv_9l8F0Lo&ab_channel=LoharTalk
+- https://www.youtube.com/watch?v=Himo9n0BaDw&ab_channel=ProWeb
+
 
 by Aaron Dominic Domingo

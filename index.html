@@ -44,7 +44,7 @@
         <!-- the main contains important page content. -->
 
         <section id="hero">
-            <img src="img/Portrait of Me.jpg" alt="My Avatar that slightly looks like me. ">
+            <img src="img/Portrait of Me.jpg" alt="A picture of me in Japan. Behind me is the Mt. Fuji. ">
             <div>
                 <p> Aaron Dominic</p>
                 <p> A Young Student at Raritan Valley Community College, New Jersey.</p>
@@ -112,38 +112,38 @@
 
             <hr>
             <figure>
-                <img src="img/Computer Stuff.jpg" alt="A submarine by the dock in Hamburg, Germany.">
-                <figcaption>A bulky submarine.</figcaption>
+                <img src="img/Computer Stuff.jpg" alt="A shelf with keyboards on it in a tech shop.">
+                <figcaption>A bunch of computer keyboard.</figcaption>
             </figure>
 
             <hr>
             <figure>
-                <img src="img/Game District.jpg" alt="A submarine by the dock in Hamburg, Germany.">
-                <figcaption>A bulky submarine.</figcaption>
+                <img src="img/Game District.jpg" alt="A building full of game stores in Akihabara, Japan.">
+                <figcaption>This building full of game shops and nerdy stores in Japan.</figcaption>
             </figure>
 
             <hr>
             <figure>
-                <img src="img/Tokyo Tower.jpg" alt="A submarine by the dock in Hamburg, Germany.">
-                <figcaption>A bulky submarine.</figcaption>
+                <img src="img/Tokyo Tower.jpg" alt="The Tokyo Tower in Japan">
+                <figcaption>The famous Tokyo Tower.</figcaption>
             </figure>
 
             <hr>
             <figure>
-                <img src="img/Figurines.jpg" alt="A submarine by the dock in Hamburg, Germany.">
-                <figcaption>A bulky submarine.</figcaption>
+                <img src="img/Figurines.jpg" alt="A bunch of anime figurines in glass cases.">
+                <figcaption>A case full of Gundam and anime figurines.</figcaption>
             </figure>
 
             <hr>
             <figure>
-                <img src="img/Manga Book Shelf.jpg" alt="A submarine by the dock in Hamburg, Germany.">
-                <figcaption>A bulky submarine.</figcaption>
+                <img src="img/Manga Book Shelf.jpg" alt="A shelf full of manga comics and magazines.">
+                <figcaption>Manga comics and magazines.</figcaption>
             </figure>
 
             <hr>
             <figure>
-                <img src="img/Mt Fuji.jpg" alt="A submarine by the dock in Hamburg, Germany.">
-                <figcaption>A bulky submarine.</figcaption>
+                <img src="img/Mt Fuji.jpg" alt="The famous Mt. Fuji covered in clouds.">
+                <figcaption>Mt. Fuji hidden behind gray clouds.</figcaption>
             </figure>
 
 
@@ -151,7 +151,7 @@
 
         <article id="lit">
 
-            <h2>The article</h2>
+            <h2>The Red-Headed League</h2>
 
             <div>
                 <p>"It is our French gold," whispered the director. "We have had several warnings that an attempt might be made upon it."</p>
@@ -194,8 +194,71 @@
         <section id="blog">
             <h2> Image Hover Effect </h2>
             
-            <p></p>
+            <p>Image hover effect is a feature in CSS (Cascading Style Sheets) that allows you to add amazing eye-catching animations to texts, images, and links. <br>
+            Image Hover Effects come with endless possibilities for adding animations! You can customize the animation you want to add to the text, experiment with the border and shadow, background color, font color, or other text properties, and alter it to the animation you want to add.</p>
+
+            <p>Here is how I coded my image hover effect! <br>
+            1. I wrote a div container that contains the image I wanted to use for my hover effect as well as its own alt tag and class. <br>
+            2. Within the div container, contains another div class for the overlay. And within this div class contains another div that contains the text I want to show when you hover on the image. <br>
+
+            It pretty much looks like this <br>
+            <img src="img/DIV CONTAINER.png"> </p>
+        
+            <p>In the Cascading Style Sheets file, I formatted each class to create the hover effect. Here is how I did mine.<br>
+            1. I coded the container so that the image and the container for the hover transition fits together by 450 pixels. <br>
+            2. Next, I formatted the overlay to make the hover transition come in at 2.5 seconds as well as to hide the text when it is not hovered over yet. <br>
+            3. I coded the text and the overlay to make it so that when you hover over the image, the text and the background-color covers the image and that it moves to the left direction. <br>
+            My CSS code looks like this </p>
+            <img src="img/HOVER EFFECT.png"> <br>
+
+                <p>Here are the results!</p>
+
+            <div class="container">
+                <img src="img/Just A Chill Guy.jpg" alt="img" class="image">
+                <div class="overlay overlayLeft">
+                    <div class="text">just a chill guy</div>
+                </div>
+            </div>
             
+            <p>Now I want to make the transitions come from different directions or have different effects.<br>
+            Here is how I made different styles for hover effects!</p>
+
+            <p>1. I basically duplicated the same syntax for the container and made 4 additional images. The only difference is that I renamed the class name for the overlay to its respective effects. Which looks like this<br>
+                <img src="img/TRANSITION EFFECTS.png"> <br>
+            2. After that, I coded in the CSS file to make each image have its own transition effects and styles.<br>
+            My code should look like this!<br>
+            <img src="img/CSS TRANSITION STYLES.png">
+            </p>
+            <p> Here are the final results!</p>
+            <div>
+                <div>
+                    <div class="container">
+                        <img src="img/Just A Chill Guy.jpg" alt="img" class="image">
+                        <div class="overlay overlayTop">
+                            <div class="text">just a chill guy</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="img/Just A Chill Guy.jpg" alt="img" class="image">
+                        <div class="overlay overlayBottom">
+                            <div class="text">just a chill guy</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="img/Just A Chill Guy.jpg" alt="img" class="image">
+                        <div class="overlay overlayFade">
+                            <div class="text">just a chill guy</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="img/Just A Chill Guy.jpg" alt="img" class="image">
+                        <div class="overlay overlayCross">
+                            <div class="text">just a chill guy</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="contact">
